@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('admin/categories', 'AdminCategoriesController@index');
+Route::get('admin/products', 'AdminProductController@index');
+
 Route::get('/', function () {
     return view('welcome');
 });
